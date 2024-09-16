@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback");
+@import "../customs/plugins/fontawesome-free/css/all.min.css";
+
+@import "../customs/dist/css/adminlte.min.css";
+
+@import "../customs/plugins/overlayScrollbars/css/OverlayScrollbars.min.css";
+
+/* Card Styling */
+.subscription-card {
+    border-radius: 10px;
+    background: linear-gradient(145deg, #fff, #f0f0f0);
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.subscription-card:hover {
+    transform: scale(1.05);
+}
+
+.subscription-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.subscription-card .card-price {
+    font-size: 2rem;
+    color: #333;
+    margin: 15px 0;
+}
+
+.subscription-card .package-features li {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.subscription-card .package-features li i {
+    color: #28a745;
+    margin-right: 5px;
+}
+
+/* Ribbon Styling */
+.ribbon {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: orangered; /* Change this color based on package type */
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transform: rotate(-15deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ribbon span {
+    text-transform: uppercase;
+}
+
+/* Button Styling */
+.subscription-card .btn {
+    border-radius: 25px;
+    padding: 10px;
+}
+/* General Card Styling */
+.whatsapp-ad-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.whatsapp-ad-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ad Image Styling */
+.ad-image-wrapper {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ad-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ad-image-wrapper:hover .ad-image {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+}
+
+/* Card Title and Description */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.btn-outline-success {
+    border-radius: 25px;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .ad-image-wrapper {
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+}
