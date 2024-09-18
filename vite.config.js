@@ -11,11 +11,4 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    server: {
-        host: '0.0.0.0', // Allows access from any network interface
-        port: 5173,      // Use this port or change as needed
-        hmr: {
-            host: '192.168.8.101', // Replace with your local IP address
-        },
-    },
 });

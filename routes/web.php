@@ -22,6 +22,7 @@ Route::get('/affiliates', [HomeController::class, 'show_affiliates'])->name('aff
 Route::get('/withdrawals_history', [HomeController::class, 'history'])->name('withdrawals history');
 Route::get('pay', [HomeController::class, 'showPaymentMethods'])->name('pay methods');
 
+
 Route::get('withdrawal/create', [WithdrawController::class, 'create'])->name('user.withdrawal.create');
 Route::post('withdrawal/store', [WithdrawController::class, 'store'])->name('user.withdrawal.store');
 
